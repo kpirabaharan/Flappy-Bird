@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26d653d2ca8854df09badc01deb85383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 10
   deadZone: -45
 --- !u!1 &5261898651973715512
 GameObject:
@@ -342,3 +342,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 935e9c14c55614dd88f9ede6acb3e327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  logic: {fileID: 0}
