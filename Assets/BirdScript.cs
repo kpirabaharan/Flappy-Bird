@@ -8,6 +8,7 @@ public class BirdScript : MonoBehaviour
     public float flapStrength = 10;
     public LogicScript logic;
     public bool birdIsAlive = true;
+    public float screenHeight = 15;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,12 @@ public class BirdScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && birdIsAlive == true)
         {
             myRigidbody.velocity = Vector2.up * flapStrength;
+        }
+
+        if(transform.position.y > screenHeight || transform.position.y < -screenHeight)
+        {
+            logic.gameOver();
+            birdIsAlive = false;
         }
     }
 
